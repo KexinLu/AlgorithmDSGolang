@@ -7,19 +7,21 @@ This project employs gomod for package management
 ## File Structure
 For every topic the file structure will look like this:
 
+```
 data_structure_name
-        reading
-            file
-        implementation
+    reading
+        file
+    implementation
+        file
+        test
+    leetcode
+        lc001
             file
             test
-        leetcode
-            lc001
-               file
-               test
-            lc002
-               file
-               test
-            lc212
-               file
-               test
+        lc002
+            file
+            test
+        lc212
+            file
+            test
+```
