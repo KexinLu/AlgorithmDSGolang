@@ -1,0 +1,25 @@
+# Data Structure
+
+
+## Why do we need data structure?
+
+- Data structure helps us organize data into a format which makes it easier to store/retrieve data when using some coding pattern
+- Data structure helps us write cleaner code
+
+## Abstract Data Types
+
+- ADT is basically interface of a data structure
+- ADT only provides interface but no specific details
+eg.
+     List { Slice (ArrayList), LinkedList, etc. }
+     Queue { Linked List, Heap, etc. }
+     Map
+
+
+## How to Get big O
+
+Big O is an estimation, we should only keep the highest order.
+eg.
+
+O(2n) ~> O(n)
+O(n^2 + 2n) ~> O(n^2)
