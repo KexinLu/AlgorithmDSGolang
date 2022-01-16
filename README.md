@@ -36,7 +36,7 @@ data_structure_name
 - ADT is "interface" of data structures
 - ADT only provides high level contracts but no specific details
 eg.
-     List 
+     List
      Queue
      Map
 
@@ -55,18 +55,18 @@ O(n^2 + 2n) ~> O(n^2)
 
 ## Data Structures in this repo
 
-* Array 
-    - Array(Static Array) []
-    - Slice(Dynamic Array) []
-    - String []
-    - Suffix Array []
-* List 
-    - Linked List []
-    - Doubly Linked List []
-* HashMap []
-* Stack []
+* Array
+    - Array(Static Array) [x]
+    - Slice(Dynamic Array) [x]
+    - String [x]
+    - Suffix Array [x]
+* List
+    - Linked List [x]
+    - Doubly Linked List [x]
+* HashMap [x]
+* Stack [x]
 * Queue
-    - simple queue []
+    - simple queue [x]
     - PriorityQueue []
 * Graph
     - Unidirectional Graph []
