@@ -104,3 +104,47 @@ func threeSumTwoPointer(nums []int) [][]int {
 	}
 	return output
 }
+
+// if sort of original array is not allowed
+func ThreeSumNoSort() {
+	output := [][]int{}
+	outputMap := make(map[[3]int][]int)
+	n := len(nums)
+	if n < 3 {
+		return output
+	}
+
+	for i := 0; i < n-2; i++ {
+		if i > 0 && nums[i] == nums[i-1] {
+			continue
+		}
+		target := -nums[i]
+		marker := make(map[int]int)
+		for j := i + 1; j < n; j++ {
+			curTarget := target - nums[j]
+			if val, ok := marker[nums[j]]; ok {
+				k := [3]int{nums[i], nums[j], val}
+				sortArr(&k)
+				outputMap[k] = []int{nums[i], nums[j], val}
+			} else {
+				marker[curTarget] = nums[j]
+			}
+		}
+	}
+	for _, v := range outputMap {
+		output = append(output, v)
+	}
+
+	return output
+}
+
+func sortArr(arr *[3]int) {
+	for i := 0; i < 3; i++ {
+		for j := 2; j > i; j-- {
+			if arr[j] < arr[j-1] {
+				arr[j], arr[j-1] = arr[j-1], arr[j]
+			}
+		}
+	}
+
+}
