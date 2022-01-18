@@ -1,3 +1,3 @@
-module interviewplus.com/datastructure_go
+module interview
 
 go 1.16
