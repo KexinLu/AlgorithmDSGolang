@@ -26,6 +26,18 @@ data_structure_name
             test
 ```
 
+## Naming Convention
+
+under the algorithm path, you will find folders of problemsets grouped by datastructure or other type tags
+the way to name these problems should be
+
+codeplatformID_problemname_freq[HML]_[easy|med|hard]
+eg. lc001_twosum_freqH_easy
+
+note the problemname should be one word
+
+Following this naming convention is important to enable us to use some bash scripting to filter through our problems
+
 ## Purpose of data structure?
 
 - organizing data into a format which enables some coding pattern to store/retrieve data
