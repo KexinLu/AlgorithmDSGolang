@@ -12,7 +12,7 @@ done
 query="ls $chosen -1"
 freqs=( all high medium low )
 level=( all medium easy hard )
-queryEnd=" |awk -F '_' \"{gsub ( \"[lc]\", \"\") ; print \$1}\""
+queryEnd=" | awk -F '_' \"{gsub ( \"[lc]\", \"\") ; print \$1}\""
 
 select t in "${freqs[@]}"; do
   case $t in
@@ -20,7 +20,7 @@ select t in "${freqs[@]}"; do
       break
       ;;
     high )
-      query=$query"| grep freqH"
+      query=$query"| grep freqH" && break
       ;;
     medium )
       query=$query"| grep freqM" && break
