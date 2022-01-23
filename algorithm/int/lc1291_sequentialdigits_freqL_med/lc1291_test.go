@@ -1,4 +1,4 @@
-package lc7
+package lc1291
 
 import (
 	"testing"
