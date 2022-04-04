@@ -79,7 +79,7 @@ O(n^2 + 2n) ~> O(n^2)
 * Stack [x]
 * Queue
     - simple queue [x]
-    - PriorityQueue []
+    - PriorityQueue [x] (Only the Heap Version)
 * Graph
     - Unidirectional Graph []
     - Bidirectional Graph []
@@ -88,10 +88,10 @@ O(n^2 + 2n) ~> O(n^2)
     - MST(minimum spanning tree) []
     - 2d matrix(2d arrays) []
     - Tree(https://www.youtube.com/watch?v=xVka6z1hu-I)
-        - Heap []
-        - Trie []
-        - Binary Tree []
-        - Binary Search Tree []
+        - Heap [x]
+        - Trie [x]
+        - Binary Tree [x]
+        - Binary Search Tree [x]
         - Fenwick Tree (Binary Indexd Tree) []
         - Red-black Tree []
         - AVL Tree []
